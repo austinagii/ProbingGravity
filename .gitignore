@@ -1,0 +1,80 @@
+# ==============================================================================
+# MACHINE LEARNING & DEEP LEARNING SPECIFIC
+# ==============================================================================
+
+# Large data files and directories
+data/
+datasets/
+*.csv
+*.tsv
+*.jsonl
+*.parquet
+*.h5
+*.hdf5
+*.npy
+*.npz
+
+# Large Model weights, checkpoints, and serialized assets
+models/
+checkpoints/
+weights/
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.pb
+*.tflite
+
+# Experiment tracking, logging, and visualization dashboards
+logs/
+lightning_logs/
+tensorboard/
+.wandb/
+wandb/
+mlruns/
+.hydra/
+
+# ==============================================================================
+# JUPYTER NOTEBOOKS
+# ==============================================================================
+# Auto-saved notebook checkpoints and local server states
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+.notebook_lock
+checkpoint_*.ipynb
+
+# ==============================================================================
+# STANDARD PYTHON ARTIFACTS
+# ==============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments and Package Managers
+.env
+.venv
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
+
+# ==============================================================================
+# IDEs AND OS FILES
+# ==============================================================================
+# VS Code, PyCharm, and System specific files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+
+!**/.gitkeep
