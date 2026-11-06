@@ -13,7 +13,12 @@ def surprise(
     stride: int = 2,
 ) -> torch.Tensor:
     """Returns the surprise score at every `stride` frames in the video."""
+
+    if n_context_frames + n_future_frames > video.shape[1]:
+        raise ValueError("Insufficient in frames in video for sliding window.")
+
     B, T, C, H, W = video.shape
+
     config = model.config
     device = model.device
 
